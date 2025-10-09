@@ -1,0 +1,11 @@
+# cloudbuild.yaml
+steps:
+  - name: 'ubuntu'
+    args: ['echo', 'Hello, world! Building from GitHub.']
+  - name: 'ubuntu'
+    args: ['echo', 'Project ID: ${PROJECT_ID}']
+  - name: 'ubuntu'
+    args: ['echo', 'Commit SHA: ${COMMIT_SHA}']
+
+options:
+  logging: CLOUD_LOGGING_ONLY
